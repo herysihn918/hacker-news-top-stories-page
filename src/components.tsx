@@ -1,5 +1,5 @@
 import * as React from 'react';
-import logo from './logo.svg';
+import loadingIcon from './loading.png';
 import linkIcon from './link.png'
 
 interface HackerNewsInfo {
@@ -29,7 +29,7 @@ interface LoadingIndicatorProps {
 const LoadingIndicator: React.FC<LoadingIndicatorProps> = ({loadingText}) => {
     return (
         <div style={{width: '100%', textAlign: 'center'}}>
-            <img src={logo} className="loading-logo" />
+            <img src={loadingIcon} className="loading-logo" />
             <div> { loadingText } </div>
         </div>
     )
