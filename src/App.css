@@ -1,34 +1,63 @@
-.App {
-  text-align: center;
+body {
+  background-color: #1B262C;
+  color: #BBE1FA;
 }
 
-.App-logo {
-  height: 40vmin;
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+h1 {
+  margin: 18px 12px;
+  margin-bottom: 32px;
+}
+
+.news-item {
+  width: calc(100% - 56px);
+  max-width: 904px;
+  padding: 16px;
+  border: 1px solid #3282B8;
+  border-radius: 6px;
+  margin: 0 12px;
+  margin-bottom: 18px;
+}
+.news-item .title {
+  font-size: 20px;
+  font-weight: 700;
+}
+.news-item .author {
+  color: #3282B8;
+  font-size: 16px;
+  margin-bottom: 24px;
+}
+
+a {
+  color: #BBE1FA;
+  font-weight: 600;
+  text-decoration: none;
+}
+a:hover {
+  color: white;
+}
+
+.loading-logo {
+  height: 32px;
+  width: 32px;
   pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .loading-logo {
+    animation: loading-logo-spin infinite 2s linear;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
+@keyframes loading-logo-spin {
   from {
     transform: rotate(0deg);
   }
