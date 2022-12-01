@@ -1,4 +1,9 @@
-# Getting Started with Create React App
+## Live Example Site
+
+[Click here](https://hacker-news-top.netlify.app/) or check the following URL.\
+https://hacker-news-top.netlify.app/
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
